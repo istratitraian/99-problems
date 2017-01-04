@@ -29,4 +29,7 @@ public class P08 {
         return result;
     }
 
+  public static <T> List<T> compressWithSet(List<T> list) {
+    return new ArrayList<>(new java.util.LinkedHashSet<>(list));
+  }
 }
